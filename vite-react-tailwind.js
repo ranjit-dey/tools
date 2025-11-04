@@ -4,7 +4,7 @@
  * =============================================================
  * Vite + React + Tailwind Setup Script  —  Minimal & Smart
  * Author: Ranjit Dey
- * Version: Cleaned Output Formatting
+ * Version: Cleaned Output Formatting & Windows Spawn Fix
  * ✅ Zero dependencies (pure Node.js)
  * =============================================================
  */
@@ -59,6 +59,7 @@ function spinner(text) {
 // Runs a command with spinner feedback
 function runCommand(command, message) {
     return new Promise((resolve, reject) => {
+        // exec automatically uses { shell: true } for Windows compatibility
         const spin = spinner(message);
         const child = exec(command, { shell: true });
 
@@ -204,7 +205,8 @@ async function main() {
         console.log();
         console.log(`${color.green}🚀 Starting development server...${color.reset}`);
         console.log();
-        const dev = spawn("npm", ["run", "dev"], { stdio: "inherit" });
+        // FIX: Added { shell: true } to correctly execute 'npm' on Windows
+        const dev = spawn("npm", ["run", "dev"], { stdio: "inherit", shell: true });
         dev.on("exit", () => process.exit(0));
     } else {
         console.log();
