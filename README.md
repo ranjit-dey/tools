@@ -9,8 +9,8 @@ Works seamlessly on **Windows, Linux, and macOS**.
 
 Before you begin, ensure that you have:
 
-- [Node.js](https://nodejs.org/) installed
-  _(Check by running `node -v` and `npm -v`)_
+-   [Node.js](https://nodejs.org/) installed
+    _(Check by running `node -v` and `npm -v`)_
 
 ---
 
@@ -67,15 +67,15 @@ If you prefer **Bash**, you can use the shell version:
 
 2. **Make it executable:**
 
-   ```bash
-   chmod +x vite-react-tailwind.sh
-   ```
+    ```bash
+    chmod +x vite-react-tailwind.sh
+    ```
 
 3. **Run it from anywhere:**
 
-   ```bash
-   ./vite-react-tailwind.sh
-   ```
+    ```bash
+    ./vite-react-tailwind.sh
+    ```
 
 ---
 
@@ -125,39 +125,40 @@ Starting development server...
 
 ## 🧠 Notes
 
-- You can run this script **from anywhere** as long as you have Node.js and permissions.
-- The script:
+-   You can run this script **from anywhere** as long as you have Node.js and permissions.
+-   The script:
 
-  - Creates a Vite + React project
-  - Installs and configures Tailwind CSS
-  - Updates config files and starter files
-  - Opens your project automatically in **VS Code**
-  - Optionally starts the **Vite dev server**
+    -   Creates a Vite + React project
+    -   Installs and configures Tailwind CSS
+    -   Updates config files and starter files
+    -   Opens your project automatically in **VS Code**
+    -   Optionally starts the **Vite dev server**
 
 ---
 
 ## 💡 Tips
 
-- To make `.sh` script globally accessible:
+-   To make `.sh` script globally accessible:
 
-  ```bash
-  sudo mv vite-react-tailwind.sh /usr/local/bin/vite-setup
-  chmod +x /usr/local/bin/vite-setup
-  ```
+    ```bash
+    sudo mv vite-react-tailwind.sh /usr/local/bin/vite-setup
+    chmod +x /usr/local/bin/vite-setup
+    ```
 
-  Then you can simply run:
+    Then you can simply run:
 
-  ```bash
-  vite-setup
-  ```
+    ```bash
+    vite-setup
+    ```
 
 ---
 
 ## 🧑‍💻 Author
 
-**Ranjit Dey**
-Computer Science Student & Developer
+**Ranjit Dey**<br>
+Computer Science Student & Developer<br>
 ✨ Automating the boring parts of setup ✨
 
-Made with ❤️ by ranjit
+<center>Made with ❤️ by ranjit<center>
+
 [visit me](https://ranjitdey.vercel.app)
